@@ -1,9 +1,9 @@
 // import functions
 
-import { add } from "./calculator.js";
-import { subtract } from "./calculator.js";
-import { multiply } from "./calculator.js";
-import { divide } from '../calculator.js';
+import { add } from './calculator.js';
+import { subtract } from './calculator.js';
+import { multiply } from './calculator.js';
+import { divide } from './calculator.js';
 
 
 // reference needed DOM elements
