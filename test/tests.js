@@ -6,6 +6,8 @@ import { subtract } from '../calculator.js';
 
 import { multiply } from '../calculator.js';
 
+import { divide } from '../calculator.js';
+
 const test = QUnit.test;
 
 
@@ -43,6 +45,16 @@ test('multiply two numbers', (expect) => {
     const expected = 50;
 
     const actual = multiply(x, y);
+    expect.equal(actual, expected);
+
+});
+
+test('divide two numbers', (expect) => {
+    const x = 60;
+    const y = 5;
+    const expected = 12;
+
+    const actual = divide(x, y);
     expect.equal(actual, expected);
 
 });

@@ -3,6 +3,7 @@
 import { add } from "./calculator.js";
 import { subtract } from "./calculator.js";
 import { multiply } from "./calculator.js";
+import { divide } from '../calculator.js';
 
 
 // reference needed DOM elements
@@ -52,4 +53,18 @@ multiplyButton.addEventListener('click', () => {
     const product = multiply(num1, num2);
 
     multiplyAnswer.textContent = product;
+});
+
+const divideNumber1 = document.getElementById('divide-number-1');
+const divideNumber2 = document.getElementById('divide-number-2');
+const divideButton = document.getElementById('divide-button');
+const divideAnswer = document.getElementById('divide-answer');
+
+divideButton.addEventListener('click', () => {
+    const num1 = Number(divideNumber1.value);
+    const num2 = Number(divideNumber2.value);
+
+    const quotient = divide(num1, num2);
+
+    divideAnswer.textContent = quotient;
 });
